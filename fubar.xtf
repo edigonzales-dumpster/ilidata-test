@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+  <HEADERSECTION SENDER="ili2pg-4.3.1-23b1f79e8ad644414773bb9bd1a97c8c265c5082" VERSION="2.3">
+    <MODELS>
+      <MODEL NAME="DatasetIdx16" VERSION="2018-11-21" URI="mailto:ce@eisenhutinformatik.ch"/>
+    </MODELS>
+  </HEADERSECTION>
+  <DATASECTION>
+    <DatasetIdx16.DataIndex BID="DatasetIdx16.DataIndex">
+      <DatasetIdx16.DataIndex.DatasetMetadata>
+        <id>ch.so.arp.nutzungsplanung</id>
+        <model>
+          <DatasetIdx16.ModelLink>
+            <name>SO_Nutzungsplanung_20171118</name>
+            <locationHint>http://geo.so.ch/models</locationHint>
+          </DatasetIdx16.ModelLink>
+        </model>
+        <epsgCode>2056</epsgCode>
+        <resolutionScope>500</resolutionScope>
+        <publishingDate>2020-05-10</publishingDate>
+        <lastEditingDate>2020-05-10</lastEditingDate>
+        <original>http://data.geo.so.ch</original>
+        <boundary>
+          <DatasetIdx16.BoundingBox>
+            <westlimit>7.0400</westlimit>
+            <southlimit>47.0197</southlimit>
+            <eastlimit>8.3289</eastlimit>
+            <northlimit>47.5627</northlimit>
+          </DatasetIdx16.BoundingBox>
+        </boundary>
+        <title>
+          <DatasetIdx16.MultilingualText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedText>
+                <Language>de</Language>
+                <Text>Nutzungsplanung Kanton Solothurn</Text>
+              </DatasetIdx16.LocalisedText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualText>
+        </title>
+        <shortDescription>
+          <DatasetIdx16.MultilingualMText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedMText>
+                <Language>de</Language>
+                <Text>Sehr lange Beschreibung des Datensatzes....... Fixpunkte</Text>
+              </DatasetIdx16.LocalisedMText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualMText>
+        </shortDescription>
+        <keywords>Nutzungsplanung, Fubar</keywords>
+        <servicer>https://agi.so.ch</servicer>
+        <technicalContact>mailto:agi@bd.so.ch</technicalContact>
+        <furtherInformation>http://geo.so.ch/models/ARP/SO_Nutzungsplanung_20171118.uml</furtherInformation>
+        <furtherMetadata>http://www.geolion.zh.ch/geodatensatz/1484</furtherMetadata>
+        <knownWMS>
+          <DatasetIdx16.WebService_>
+            <value>http://geo.so.ch/api/wms</value>
+          </DatasetIdx16.WebService_>
+        </knownWMS>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>application/interlis+xml;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>geodata/ch.so.arp.nutzungsplanung/2502.xtf</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+    </DatasetIdx16.DataIndex>
+  </DATASECTION>
+</TRANSFER>
