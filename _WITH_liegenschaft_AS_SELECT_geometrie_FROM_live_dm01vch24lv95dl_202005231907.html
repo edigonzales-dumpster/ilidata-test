@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/><style>
+table {border: medium solid #6495ed;border-collapse: collapse;width: 100%;} th{font-family: monospace;border: thin solid #6495ed;padding: 5px;background-color: #D0E3FA;background-image: url(sky.jpg);}td{font-family: sans-serif;border: thin solid #6495ed;padding: 5px;text-align: center;background-color: #ffffff;}.odd{background:#e8edff;}img{padding:5px; border:solid; border-color: #dddddd #aaaaaa #aaaaaa #dddddd; border-width: 1px 2px 2px 1px; background-color:white;}</style>
+</head>
+<body>
+<table><tr><th colspan="6">/*
+WITH liegenschaft AS 
+(
+    SELECT 
+        geometrie
+    FROM 
+        live.dm01vch24lv95dliegenschaften_grundstueck AS grundstueck
+        LEFT JOIN live.dm01vch24lv95dliegenschaften_liegenschaft AS liegenschaft
+        ON liegenschaft.liegenschaft_von = grundstueck.t_id 
+    WHERE
+        egris_egrid = 'CH367032068145'
+)
+SELECT 
+    *
+FROM 
+    live.dm01vch24lv95dliegenschaften_projliegenschaft AS projliegenschaft
+    LEFT JOIN live.dm01vch24lv95dliegenschaften_projgrundstueck AS projgrundstueck
+    ON projliegenschaft.projliegenschaft_von = projgrundstueck.t_id
+    LEFT JOIN live.dm01vch24lv95dliegenschaften_lsnachfuehrung AS nachfuehrung
+    ON projgrundstueck.entstehung = nachfuehrung.t_id ,
+    
+    liegenschaft 
+WHERE
+    ST_Intersects(projliegenschaft.geometrie, liegenschaft.geometrie )
+*/
+
+SELECT 
+    aname,
+    bfsnr, 
+    st_xmin(st_transform(grenze.geometrie, 4326)), 
+    st_ymin(st_transform(grenze.geometrie, 4326)), 
+    st_xmax(st_transform(grenze.geometrie, 4326)), 
+    st_ymax(st_transform(grenze.geometrie, 4326)) 
+FROM 
+    live.dm01vch24lv95dgemeindegrenzen_gemeinde AS gemeinde
+    LEFT JOIN live.dm01vch24lv95dgemeindegrenzen_gemeindegrenze  AS grenze
+    ON grenze.gemeindegrenze_von = gemeinde.t_id 
+WHERE   
+    bfsnr IN (2401, 2403, 2405, 2407, 2408, 2455, 2456, 2457, 2473, 2474, 2475, 2476, 2477, 2479, 2491, 2498, 2501, 2502, 2514, 2551, 2573, 2580, 2581, 2586, 2613, 2614, 2615, 2516)
+ORDER BY 
+    bfsnr </th></tr><tr><th>aname</th><th>bfsnr</th><th>st_xmin</th><th>st_ymin</th><th>st_xmax</th><th>st_ymax</th></tr><tr class="odd"><td>Egerkingen</td><td>2,401</td><td>7.7748367478</td><td>47.3107510994</td><td>7.8194827337</td><td>47.3407206208</td></tr>
+<tr><td>Kestenholz</td><td>2,403</td><td>7.7341412344</td><td>47.2570252188</td><td>7.7764186327</td><td>47.2973167958</td></tr>
+<tr class="odd"><td>Niederbuchsiten</td><td>2,405</td><td>7.7563959058</td><td>47.2745727997</td><td>7.7999848605</td><td>47.3027976635</td></tr>
+<tr><td>Oensingen</td><td>2,407</td><td>7.6847747738</td><td>47.2591154907</td><td>7.7522348935</td><td>47.308933085</td></tr>
+<tr class="odd"><td>Wolfwil</td><td>2,408</td><td>7.7647924043</td><td>47.2561001392</td><td>7.8281392105</td><td>47.282489403</td></tr>
+<tr><td>Lüterkofen-Ichertswil</td><td>2,455</td><td>7.4795986258</td><td>47.152045881</td><td>7.5229303349</td><td>47.1751501679</td></tr>
+<tr class="odd"><td>Lüterswil-Gächliwil</td><td>2,456</td><td>7.4275530325</td><td>47.1089467141</td><td>7.456649112</td><td>47.1340023054</td></tr>
+<tr><td>Messen</td><td>2,457</td><td>7.4111408166</td><td>47.0743437246</td><td>7.4750982786</td><td>47.120608211</td></tr>
+<tr class="odd"><td>Dornach</td><td>2,473</td><td>7.6045012931</td><td>47.4629179637</td><td>7.6470197966</td><td>47.4894089722</td></tr>
+<tr><td>Gempen</td><td>2,474</td><td>7.6408203008</td><td>47.464599153</td><td>7.6822919897</td><td>47.496872406</td></tr>
+<tr class="odd"><td>Hochwald</td><td>2,475</td><td>7.6152682769</td><td>47.4375734341</td><td>7.6709188166</td><td>47.4702344773</td></tr>
+<tr><td>Hofstetten-Flüh</td><td>2,476</td><td>7.4869064059</td><td>47.4586442591</td><td>7.5306845657</td><td>47.4889856866</td></tr>
+<tr class="odd"><td>Metzerlen-Mariastein</td><td>2,477</td><td>7.4452192979</td><td>47.4492349072</td><td>7.4951470419</td><td>47.4821637968</td></tr>
+<tr><td>Rodersdorf</td><td>2,479</td><td>7.420821246</td><td>47.4707051341</td><td>7.4707636047</td><td>47.4981058006</td></tr>
+<tr class="odd"><td>Hauenstein-Ifenthal</td><td>2,491</td><td>7.8336318528</td><td>47.3590715026</td><td>7.8803563076</td><td>47.3844758383</td></tr>
+<tr><td>Rohr (SO)</td><td>2,498</td><td>7.9349353784</td><td>47.4033517697</td><td>7.9693553783</td><td>47.4188360995</td></tr>
+<tr class="odd"><td>Winznau</td><td>2,501</td><td>7.8961104177</td><td>47.357142455</td><td>7.9424756036</td><td>47.3822844248</td></tr>
+<tr><td>Wisen (SO)</td><td>2,502</td><td>7.8691434301</td><td>47.3834420952</td><td>7.9097074156</td><td>47.4072689921</td></tr>
+<tr class="odd"><td>Bolken</td><td>2,514</td><td>7.6458372444</td><td>47.1845143603</td><td>7.6746346497</td><td>47.2017848857</td></tr>
+<tr><td>Deitingen</td><td>2,516</td><td>7.5873776384</td><td>47.205019039</td><td>7.6486287451</td><td>47.2298078671</td></tr>
+<tr class="odd"><td>Lommiswil</td><td>2,551</td><td>7.4506024724</td><td>47.2142199948</td><td>7.4891735092</td><td>47.2437502324</td></tr>
+<tr><td>Dulliken</td><td>2,573</td><td>7.9281568544</td><td>47.3313958327</td><td>7.9646795287</td><td>47.3591232105</td></tr>
+<tr class="odd"><td>Kappel (SO)</td><td>2,580</td><td>7.8321047553</td><td>47.3108095233</td><td>7.8808310178</td><td>47.3333745496</td></tr>
+<tr><td>Olten</td><td>2,581</td><td>7.8748576943</td><td>47.3110275466</td><td>7.9290850626</td><td>47.3689237559</td></tr>
+<tr class="odd"><td>Wangen bei Olten</td><td>2,586</td><td>7.8487722436</td><td>47.3176550047</td><td>7.8892859569</td><td>47.3611217713</td></tr>
+<tr><td>Breitenbach</td><td>2,613</td><td>7.5252413115</td><td>47.3945750522</td><td>7.5877189801</td><td>47.4147076271</td></tr>
+<tr class="odd"><td>Büsserach</td><td>2,614</td><td>7.5172299516</td><td>47.3788325142</td><td>7.5780227373</td><td>47.400992062</td></tr>
+<tr><td>Erschwil</td><td>2,615</td><td>7.5177181641</td><td>47.3583086799</td><td>7.5706287877</td><td>47.3849133716</td></tr>
+</table></body></html>
