@@ -81,8 +81,164 @@
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
+          <DatasetIdx16.DataFile>
+            <fileFormat>application/geopackage+vnd.sqlite3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>../ch.so.arp.nutzungsplanung/2401.gpkg</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+
         </files>
       </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="3">
+        <id>ch.so.arp.nutzungsplanung.2403</id>
+        <originalId>originalId</originalId>
+        <version>2019-11-05</version>
+        <owner>mailto:arp@bd.so.ch</owner>
+        <model>
+          <DatasetIdx16.ModelLink>
+            <name>SO_Nutzungsplanung_20171118</name>
+            <locationHint>http://geo.so.ch/models</locationHint>
+          </DatasetIdx16.ModelLink>
+        </model>
+        <epsgCode>2056</epsgCode>
+        <resolutionScope>500</resolutionScope>
+        <publishingDate>2019-12-17</publishingDate>
+        <lastEditingDate>2019-12-17</lastEditingDate>
+        <boundary>
+          <DatasetIdx16.BoundingBox>
+            <westlimit>7.7341412344</westlimit>
+            <southlimit>47.2570252188</southlimit>
+            <eastlimit>7.7764186327</eastlimit>
+            <northlimit>47.2973167958</northlimit>
+          </DatasetIdx16.BoundingBox>
+        </boundary>
+        <title>
+          <DatasetIdx16.MultilingualText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedText>
+                <Language>de</Language>
+                <Text>Nutzungsplanung der Gemeinde Kestenholz (2403).</Text>
+              </DatasetIdx16.LocalisedText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualText>
+        </title>
+        <shortDescription>
+          <DatasetIdx16.MultilingualMText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedMText>
+                <Language>de</Language>
+                <Text>Nutzungspläne lokalisieren und dimensionieren gesetzliche zulässige Nutzung des Bodens und des damit verbunden Raumes nach Art und Intensität. Sie trennt das Baugebiet vom Nichtbaugebiet und scheidet Bauzonen von den übrigen Zonen aus. Die Grundnutzung definiert den Zweck der Nutzungszonen. Nebst den Bauzonen sind Wald, Gewässer und die Landwirtschaft weitere Grundnutzungen.</Text>
+              </DatasetIdx16.LocalisedMText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualMText>
+        </shortDescription>
+        <keywords>Nutzungsplanung, Nutzungsplan, Raumplanung, Ortsplanung, ARP</keywords>
+        <servicer>https://agi.so.ch</servicer>
+        <technicalContact>mailto:agi@bd.so.ch</technicalContact>
+        <furtherInformation>http://geo.so.ch/models/ARP/SO_Nutzungsplanung_20171118.uml</furtherInformation>
+        <furtherMetadata>http://www.geolion.zh.ch/geodatensatz/1484</furtherMetadata>
+        <knownWMS>
+          <DatasetIdx16.WebService_>
+            <value>http://geo.so.ch/api/wms</value>
+          </DatasetIdx16.WebService_>
+        </knownWMS>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>application/interlis+xml;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>../ch.so.arp.nutzungsplanung/2403.xtf</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+          <DatasetIdx16.DataFile>
+            <fileFormat>application/geopackage+vnd.sqlite3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>../ch.so.arp.nutzungsplanung/2403.gpkg</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="99">
+        <id>ch.so.arp.nutzungsplanung.2457</id>
+        <originalId>originalId</originalId>
+        <version>2019-11-05</version>
+        <owner>mailto:arp@bd.so.ch</owner>
+        <model>
+          <DatasetIdx16.ModelLink>
+            <name>SO_Nutzungsplanung_20171118</name>
+            <locationHint>http://geo.so.ch/models</locationHint>
+          </DatasetIdx16.ModelLink>
+        </model>
+        <epsgCode>2056</epsgCode>
+        <resolutionScope>500</resolutionScope>
+        <publishingDate>2019-12-17</publishingDate>
+        <lastEditingDate>2019-12-17</lastEditingDate>
+        <boundary>
+          <DatasetIdx16.BoundingBox>
+            <westlimit>7.4111408166</westlimit>
+            <southlimit>47.0743437246</southlimit>
+            <eastlimit>7.4750982786</eastlimit>
+            <northlimit>47.120608211</northlimit>
+          </DatasetIdx16.BoundingBox>
+        </boundary>
+        <title>
+          <DatasetIdx16.MultilingualText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedText>
+                <Language>de</Language>
+                <Text>Nutzungsplanung der Gemeinde Messen (2457).</Text>
+              </DatasetIdx16.LocalisedText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualText>
+        </title>
+        <shortDescription>
+          <DatasetIdx16.MultilingualMText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedMText>
+                <Language>de</Language>
+                <Text>Nutzungspläne lokalisieren und dimensionieren gesetzliche zulässige Nutzung des Bodens und des damit verbunden Raumes nach Art und Intensität. Sie trennt das Baugebiet vom Nichtbaugebiet und scheidet Bauzonen von den übrigen Zonen aus. Die Grundnutzung definiert den Zweck der Nutzungszonen. Nebst den Bauzonen sind Wald, Gewässer und die Landwirtschaft weitere Grundnutzungen.</Text>
+              </DatasetIdx16.LocalisedMText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualMText>
+        </shortDescription>
+        <keywords>Nutzungsplanung, Nutzungsplan, Raumplanung, Ortsplanung, ARP</keywords>
+        <servicer>https://agi.so.ch</servicer>
+        <technicalContact>mailto:agi@bd.so.ch</technicalContact>
+        <furtherInformation>http://geo.so.ch/models/ARP/SO_Nutzungsplanung_20171118.uml</furtherInformation>
+        <furtherMetadata>http://www.geolion.zh.ch/geodatensatz/1484</furtherMetadata>
+        <knownWMS>
+          <DatasetIdx16.WebService_>
+            <value>http://geo.so.ch/api/wms</value>
+          </DatasetIdx16.WebService_>
+        </knownWMS>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>application/interlis+xml;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>../ch.so.arp.nutzungsplanung/2457.xtf</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+          <DatasetIdx16.DataFile>
+            <fileFormat>application/geopackage+vnd.sqlite3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>../ch.so.arp.nutzungsplanung/2457.gpkg</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>
+
     </DatasetIdx16.DataIndex>
   </DATASECTION>
 </TRANSFER>
