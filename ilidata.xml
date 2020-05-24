@@ -24,6 +24,7 @@
         <originalId>originalId</originalId>
         <version>2019-11-05</version>
         <owner>mailto:arp@bd.so.ch</owner>
+		<original>https://s3.console.aws.amazon.com/s3/object/ch.so.geo.repository</original>
         <model>
           <DatasetIdx16.ModelLink>
             <name>SO_Nutzungsplanung_20171118</name>
@@ -98,6 +99,7 @@
         <originalId>originalId</originalId>
         <version>2019-11-05</version>
         <owner>mailto:arp@bd.so.ch</owner>
+		<original>https://s3.console.aws.amazon.com/s3/object/ch.so.geo.repository</original>
         <model>
           <DatasetIdx16.ModelLink>
             <name>SO_Nutzungsplanung_20171118</name>
@@ -171,6 +173,7 @@
         <originalId>originalId</originalId>
         <version>2019-11-05</version>
         <owner>mailto:arp@bd.so.ch</owner>
+		<original>https://s3.console.aws.amazon.com/s3/object/ch.so.geo.repository</original>
         <model>
           <DatasetIdx16.ModelLink>
             <name>SO_Nutzungsplanung_20171118</name>
