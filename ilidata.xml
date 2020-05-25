@@ -241,6 +241,80 @@
           </DatasetIdx16.DataFile>
         </files>
       </DatasetIdx16.DataIndex.DatasetMetadata>
+      
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="1001">
+        <id>ch.so.agi.av-gb-administrative-einteilung</id>
+        <originalId>originalId</originalId>
+        <version>2019-07-03</version>
+        <owner>mailto:arp@bd.so.ch</owner>
+		<original>https://s3.console.aws.amazon.com/s3/object/ch.so.geo.repository</original>
+        <model>
+          <DatasetIdx16.ModelLink>
+            <name>SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822</name>
+            <locationHint>http://geo.so.ch/models</locationHint>
+          </DatasetIdx16.ModelLink>
+        </model>
+        <epsgCode>2056</epsgCode>
+        <resolutionScope>500</resolutionScope>
+        <publishingDate>2019-07-03</publishingDate>
+        <lastEditingDate>2018-11-09</lastEditingDate>
+        <boundary>
+          <DatasetIdx16.BoundingBox>
+            <westlimit>7.3</westlimit>
+            <southlimit>47.0</southlimit>
+            <eastlimit>8.1</eastlimit>
+            <northlimit>47.5</northlimit>
+          </DatasetIdx16.BoundingBox>
+        </boundary>
+        <title>
+          <DatasetIdx16.MultilingualText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedText>
+                <Language>de</Language>
+                <Text>Administrative Einteilungen der amtlichen Vermessung und des Grundbuchs.</Text>
+              </DatasetIdx16.LocalisedText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualText>
+        </title>
+        <shortDescription>
+          <DatasetIdx16.MultilingualMText>
+            <LocalisedText>
+              <DatasetIdx16.LocalisedMText>
+                <Language>de</Language>
+                <Text>Administrative Einteilungen der amtlichen Vermessung (Nummerierungsbereiche, Adressen der Nachführungsgeometer, ...) und des Grundbuchs (Grundbuchkreise, Adressen der Grundbuchämter, ...).</Text>
+              </DatasetIdx16.LocalisedMText>
+            </LocalisedText>
+          </DatasetIdx16.MultilingualMText>
+        </shortDescription>
+        <keywords>Amtliche Vermessung, Grundbuch, Grundbuchamt, Nachführungsgeometer, Geometer, AGI, AS</keywords>
+        <servicer>https://agi.so.ch</servicer>
+        <technicalContact>mailto:agi@bd.so.ch</technicalContact>
+        <furtherInformation>http://geo.so.ch/models/AGI/SO_AGI_AV_GB_Administrative_Einteilungen_Publikation_20180822.uml</furtherInformation>
+        <furtherMetadata>http://www.geolion.zh.ch/geodatensatz/1484</furtherMetadata>
+        <knownWMS>
+          <DatasetIdx16.WebService_>
+            <value>http://geo.so.ch/api/wms</value>
+          </DatasetIdx16.WebService_>
+        </knownWMS>
+        <files>
+          <DatasetIdx16.DataFile>
+            <fileFormat>application/interlis+xml;version=2.3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>../ch.so.agi.av-gb-administrative-einteilung/ch.so.agi.av-gb-administrative-einteilung.xtf</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+          <DatasetIdx16.DataFile>
+            <fileFormat>application/geopackage+vnd.sqlite3</fileFormat>
+            <file>
+              <DatasetIdx16.File>
+                <path>../../ch.so.agi.av-gb-administrative-einteilung/ch.so.agi.av-gb-administrative-einteilung.gpkg</path>
+              </DatasetIdx16.File>
+            </file>
+          </DatasetIdx16.DataFile>
+        </files>
+      </DatasetIdx16.DataIndex.DatasetMetadata>      
 
     </DatasetIdx16.DataIndex>
   </DATASECTION>
