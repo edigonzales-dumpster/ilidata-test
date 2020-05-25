@@ -309,7 +309,7 @@
             <fileFormat>application/geopackage+vnd.sqlite3</fileFormat>
             <file>
               <DatasetIdx16.File>
-                <path>../../ch.so.agi.av-gb-administrative-einteilung/ch.so.agi.av-gb-administrative-einteilung.gpkg</path>
+                <path>../ch.so.agi.av-gb-administrative-einteilung/ch.so.agi.av-gb-administrative-einteilung.gpkg</path>
               </DatasetIdx16.File>
             </file>
           </DatasetIdx16.DataFile>
