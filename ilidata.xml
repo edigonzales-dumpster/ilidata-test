@@ -242,7 +242,7 @@
         </files>
       </DatasetIdx16.DataIndex.DatasetMetadata>
       
-      <DatasetIdx16.DataIndex.DatasetMetadata TID="1001">
+      <DatasetIdx16.DataIndex.DatasetMetadata TID="x1001">
         <id>ch.so.agi.av-gb-administrative-einteilung</id>
         <originalId>originalId</originalId>
         <version>2019-07-03</version>
